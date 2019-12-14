@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="./style/style.css">
+      <link rel="stylesheet" href="./style/slider.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <title>Robinson</title>
+   </head>
+   <body onload="document.body.classList.add('loaded')">
+      <div class="mobile-nav">
+         <button id="hamburger-menu" data-toggle="ham-navigation" class="hamburger-menu-button"><span class="hamburger-menu-button-open"></span></button>
+         <nav id="ham-navigation" class="ham-menu">
+            <ul class="nav-menu">
+               <li><a style="background-color: #E2E1E2;color:#24272D;" href="index.html">Home</a></li>
+               <li><a href="portfolio.html">Portfolio</a></li>
+               <li><a href="prices.html">Prices</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+      </div>
+      <div class="row">
+         <div class="columnl" id="col-left">
+            
+            <img src="./img/por.jpg" alt="" style="display: inline;"/>
+            
+            <div class="infor">
+               <h2>John Doe</h2>
+               <span>Web Developer & Designer</span>
+               <div class="social">
+                  <a href="#"><span>Twitter</span></a>
+                  <a href="#" style="margin:0 8.7%;"><span>Github</span></a>
+                  <a href="#"><span>CodePen</span></a>
+               </div>
+               <a href="./about.html" class="btn b3">About Me</a>
+            </div>
+         </div>
+         <div class="columnr">
+            <nav class="nav" style="position: relative;">
+               <li style="float:left;position:absolute;bottom:-10px;width:auto;font-family: 'Pacifico', cursive;font-size:40px;color:white;">John Doe</li>
+               <li style="margin-right:0;" ><a href="contact.html">Contact</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="prices.html">Prices</a></li>
+               <li><a href="portfolio.html">Portfolio</a></li>
+               <li><a class="active" style="color:#24272D;background-color:#E2E1E2;" href="index.html">Home</a></li>
+               <!--Fix active slide-->
+            </nav>
+            <div class="container">
+               <div class="cornerborder">
+                  <div class='section1'>
+                     <div class="row-2">
+                        <div class='item'>
+                           <h2 style="margin-bottom:30px;font-size:2.5em;">Hello! I'm <span style="color:#2574a9;">John Doe</span>,</h2>
+                           <span style="color:#24272D;font-size:1.1em;">My role is responsible for designing, coding and modifying websites, from layout to function and according to a client's specifications. Strive to create visually appealing sites that feature user-friendly design and clear navigation.</span><br>
+                           <a href="./portfolio.html" class="btn b1">View Portfolio</a>
+                           <a href="./prices.html" class="btn b2">View Prices</a>
+                        </div>
+                        <div class='item'>
+                           <div class='vid-container'>
+                              <iframe src="https://www.youtube.com/embed/bmixiVwtDso" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <h1>Services</h1>
+                  <div class="grid">
+                     <div class="serv" data-modal="#modal1">
+                        <img src="./img/ico/web.jpg">
+                        <span>Website Development</span>
+                     </div>
+                     <div class="serv" data-modal="#modal2">
+                        <img src="./img/ico/graphic.jpg">
+                        <span>Graphic Design</span>
+                     </div>
+                     <div class="serv" data-modal="#modal3">
+                        <img src="./img/ico/logo.jpg">
+                        <span>Logo Design</span>
+                     </div>
+                     <div class="serv" data-modal="#modal4">
+                        <img src="./img/ico/seo.jpg">
+                        <span>SEO</span>
+                     </div>
+                     <div class="serv" data-modal="#modal5">
+                        <img src="./img/ico/server.png">
+                        <span>Domain & Hosting</span>
+                     </div>
+                     <div class="serv" data-modal="#modal6">
+                        <img src="./img/ico/maint.png">
+                        <span>Maintenance</span>
+                     </div>
+                  </div>
+   
+                  <div id="modal1" class="modal">
+                     <div class="modal-content">
+                        <div class="contact-form">
+                           <span class="close">&times;</span>
+                           <div class="modal-container">
+                              <img src="./img/ico/webdev.gif">
+                              <h2>Website Development</h2>
+                              <p class="p" style="color:#000;">As a web developer I create the look, layout, and features of a website. My workflow always begins with a wirefrace and in-depth reasearch on a client's website. Once the website is created, it is then transformed dynamically using JavaScript, Jquery, and other frameworks. I am confortable working with development teams or clients to keeping the site up-to-date and prioritizing needs, among other tasks.
+                              </p>
+                              <a href="./portfolio.html" class="btn mb1">View Projects</a>
+                              <a href="./prices.html" class="btn mb1">View Prices</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="modal2" class="modal">
+                     <div class="modal-content">
+                        <div class="contact-form">
+                           <span class="close">&times;</span>
+                           <div class="modal-container">
+                                 <img src="./img/ico/web.gif">
+                              <h2>Graphic Design</h2>
+                              <p class="p" style="color:#000;">While working on a design project I use my creative and software engineering/programming skills to design, build and improve websites, logos, and UX/UI experience. I focus extensively on user experience in order to easily understand, navigate and use, and adhere to design standards and specifications. 
+                              </p>
+                              <a href="./portfolio.html" class="btn mb1">View Projects</a>
+                              <a href="./prices.html" class="btn mb1">View Prices</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="modal3" class="modal">
+                     <div class="modal-content">
+                        <div class="contact-form">
+                           <span class="close">&times;</span>
+                           <div class="modal-container">
+                              <img src="./img/ico/cool.gif">
+                              <h2>Logo Design</h2>
+                              <p class="p" style="color:#000;">A logo designer is responsible for the design and execution of various creative concepts. Good logo designers understand the logo isn’t just a logo, it’s a symbols that represent a company or product in presentations and on websites and packaging. Before starting the design, I always confers with clients to discuss concepts, prepare initial sketches of ideas and layout the logo sketch. Then I begin designing using Photoshop, Illustrator, and other tools.
+                              </p>
+                              <a href="./portfolio.html" class="btn mb1">View Projects</a>
+                              <a href="./prices.html" class="btn mb1">View Prices</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="modal4" class="modal">
+                     <div class="modal-content">
+                        <div class="contact-form">
+                           <span class="close">&times;</span>
+                           <div class="modal-container">
+                              <img src="./img/ico/rep.gif">
+                              <h2>SEO</h2>
+                              <p class="p" style="color:#000;">My mission as an SEO (Search Engine Optimization) Specialist is to maximize the volume of inbound organic traffic from search engines to a website. This is accomplished through a combination of on-page and off-page techniques, including link-building, social media strategy, viral marketing, metadata sculpting, site speed optimization, content strategy, information architecture, and more.
+                              </p>
+                              <a href="./portfolio.html" class="btn mb1">View Projects</a>
+                              <a href="./prices.html" class="btn mb1">View Prices</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="modal5" class="modal">
+                     <div class="modal-content">
+                        <div class="contact-form">
+                           <span class="close">&times;</span>
+                           <div class="modal-container">
+                              <img src="./img/ico/domain-name.gif">
+                              <h2>Domain & Hosting</h2>
+                              <p class="p" style="color:#000;">I will provide Internet services crucial for those who want to establish an online presence. You can expect comfortable communication with clients and be able to relate to client needs. The ability to reach an understanding about technical issues with people who aren't technically adept at handling setup issues such as website migration, software settings and any other initial problems when getting started.
+                              </p>
+                              <a href="./prices.html" class="btn mb1">View Prices</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="modal6" class="modal">
+                     <div class="modal-content">
+                        <div class="contact-form">
+                           <span class="close">&times;</span>
+                           <div class="modal-container">
+                              <img src="./img/ico/server.gif">
+                              <h2>Maintenance</h2>
+                              <p class="p" style="color:#000;">As a webmaster I strive to maintain a cohesive design for a company's website and increase its online marketing presence. I work managing/publishing content, maintaining Web design and answering consultation questions. Also expect strong communication skills and an up-to-date awareness of marketing techniques
+                              </p>
+                              <a href="./prices.html" class="btn mb1">View Prices</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="section3">
+                     <h1>Recent Projects</h1>	
+                           
+                     <div id="slider">
+                        <div class="slide">
+                           <div class="left">
+                              <div class="testdiv" style="height:250px;width:100%;"></div>
+                           </div>
+                           <div class="right">
+                              <h4>Slide 1</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis test 2.</p>
+                              <a href="#" class="btn b4">View Project</a>
+                           </div>
+                        </div>
+                        <div class="slide">
+                           <div class="left">
+                              <div class="testdiv" style="height:250px;width:100%;"></div></div>
+                           <div class="right">
+                              <h4>Slide 2</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis test 2.</p>
+                              <a href="#" class="btn b4">View Project</a>
+                           </div>
+                        </div>
+                        
+                        <div class="slide">
+                           <div class="left">
+                              <div class="testdiv" style="height:250px;width:100%;"></div></div>
+                           <div class="right">
+                              <h4>Slide 3</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis test 2.</p>
+                              <a href="#" class="btn b4">View Project</a>
+                           </div>
+                        </div>
+                        
+                        <div class="slide">
+                           <div class="left">
+                              <div class="testdiv" style="height:250px;width:100%;"></div></div>
+                           <div class="right">
+                              <h4>Slide 4</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis test 2.</p>
+                              <a href="#" class="btn b4">View Project</a>
+                           </div>
+                        </div>
+                        
+                        <div class="slide">
+                           <div class="left">
+                              <div class="testdiv" style="height:250px;width:100%;"></div></div>
+                           <div class="right">
+                              <h4>Slide 5</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae commodo sem. Integer eros nibh, molestie congue elementum quis, mattis nec tortor. Vivamus sed hendrerit sed vitae orci convallis test 2.</p>
+                              <a href="#" class="btn b4">View Project</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="next" alt="Next" title="Next">
+                        <div class="arrow-right"></div>
+                     </div>
+                     <div id="prev" alt="Prev" title="Prev">				
+                        <div class="arrow-left"></div>
+                     </div>	
+                  </div>
+                  <div class="clearfix"></div>
+                  <h1 style="padding:0;margin-top:0;">My Everyday Tools</h1>
+                  <div class="section4">
+                     <div class="item"><a href="https://visualstudio.microsoft.com/"><img src="./img/tools/vs.png" alt=""></a></div>
+                     <div class="item"><a href="https://www.adobe.com/products/photoshop.html"><img src="./img/tools/ps.png" alt=""></a></div>
+                     <div class="item"><a href="https://www.adobe.com/products/illustrator.html"><img src="./img/tools/ai.png" alt=""></a></div>
+                     <div class="item"><a href="https://www.adobe.com/products/xd.html"><img src="./img/tools/xd.png" alt=""></a></div>
+                  </div>
+               </div>
+            </div>
+            <footer>
+               <div class="row-2">
+                  <div>
+                     <a href="./index.html">Home</a>
+                     <a href="./portfolio.html">Portfolio</a>
+                     <a href="./prices.html">Prices</a>
+                     <a href="./about.html">About</a>
+                     <a href="./contact.html">Contact</a>
+                  </div>
+                  <div>
+                     <a href="#">Twitter</a>
+                     <a href="#">Github</a>
+                     <a href="#">CodePen</a>
+                  </div>
+               </div>
+            </footer>
+         </div>
+      </div>
+      <script src="./js/main.js"></script>
+      <script src="./js/slider.js"></script>
+      
+   </body>
+</html>

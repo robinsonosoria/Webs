@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="./style/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.mixitup.min.js"></script> 
+      <title>John Doe Portfolio</title>
+   </head>
+   <body>
+      <div class="mobile-nav">
+         <button id="hamburger-menu" data-toggle="ham-navigation" class="hamburger-menu-button"><span class="hamburger-menu-button-open"></span></button>
+         <nav id="ham-navigation" class="ham-menu">
+            <ul class="nav-menu">
+               <li><a href="index.html">Home</a></li>
+               <li><a style="background-color: #E2E1E2;color:#24272D;" href="portfolio.html">Portfolio</a></li>
+               <li><a href="prices.html">Prices</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+      </div>
+      
+         <div class="row">
+            <nav class="nav" style="position: relative;">
+               <li style="float:left;position:absolute;bottom:-10px;width:auto;font-family: 'Pacifico', cursive;font-size:40px;color:white;">John Doe</li>
+               <li style="margin-right:0;" ><a href="contact.html">Contact</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="prices.html">Prices</a></li>
+               <li><a style="color:#24272D;background-color:#E2E1E2;"  href="portfolio.html">Portfolio</a></li>
+               <li><a href="index.html">Home</a></li>
+            </nav>
+            <div class="container">
+               <div class="cornerborder">
+                  <ul id="filter-list" class="clearfix">
+                     <li class="filter" data-filter="all">All</li>
+                     <li class="filter" data-filter="webs">Websites</li>
+                     <li class="filter" data-filter="design">Designs</li>
+                     <li class="filter" data-filter="apps">Apps</li>
+                     <li class="filter" data-filter="logos">Logos</li>
+                  </ul>
+                  <!-- Filter List -->
+                  <ul id="portfolio">
+                     <li class="item webs">
+                        <a href="#">
+                           <img src="./img/port/wordpress-theme-design.jpg" alt="wordpress theme">
+                           <div class="caption">
+                              Caption Example
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item webs">
+                        <a href="#">
+                           <img src="./img/port/app-profile-screen.jpg" >
+                           <div class="caption">
+                           Caption Example
+                        </div>
+                        </a>
+                     </li>
+                     <li class="item design">
+                        <a href="#">
+                           <img src="./img/port/ecommerce-website-dribbble.jpg" >
+                           <div class="caption">
+                              Caption Example
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item apps">
+                        <a href="#">
+                           <img src="./img/port/forum-app-ui.jpg" >
+                           <div class="caption">
+                              Caption Example
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item webs">
+                        <a href="#">
+                           <img src="./img/port/ios-contacts-app-icon.jpg" >
+                           <div class="caption">
+                              Caption Example
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item logos">
+                        <a href="#">
+                           <img src="./img/port/iphone-chat-app.jpg" >
+                           <div class="caption">
+                              Caption Example
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item design">
+                        <a href="#">
+                           <img src="./img/port/jimi-hendrix-dribbble.jpg" >
+                           <div class="caption">
+                              Caption Example
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item webs">
+                        <a href="#">
+                           <img src="./img/port/monkeys-in-space.jpg" >
+                           <div class="caption">
+                              Caption Example
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item apps">
+                        <a href="#">
+                           <img src="./img/port/wordpress-theme-design.jpg" >
+                           <div class="caption">
+                              Caption Example
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item logos">
+                        <a href="#">
+                           <img src="./img/port/app-profile-screen.jpg" >
+                           <div class="caption">
+                              Caption Example
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item design">
+                        <a href="#">
+                           <img src="./img/port/ecommerce-website-dribbble.jpg" >
+                           <div class="caption">
+                              Caption Example
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item webs">
+                        <a href="#">
+                           <img src="./img/port/monkeys-in-space.jpg" >
+                           <div class="caption">
+                              Caption Example
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <footer>
+               <div class="row-2">
+                  <div>
+                     <a href="./index.html">Home</a>
+                     <a href="./portfolio.html">Portfolio</a>
+                     <a href="./prices.html">Prices</a>
+                     <a href="./about.html">About</a>
+                     <a href="./contact.html">Contact</a>
+                  </div>
+                  <div>
+                     <a href="#">Twitter</a>
+                     <a href="#">Github</a>
+                     <a href="#">CodePen</a>
+                  </div>
+               </div>
+            </footer>
+         </div>
+      <script src="./js/main.js"></script>
+   </body>
+</html>
