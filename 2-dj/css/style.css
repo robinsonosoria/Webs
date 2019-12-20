@@ -468,10 +468,7 @@ nav input:not(:checked) + label {
   margin-top:50px;
   margin-bottom:20px;
 }
-.stitle{
-  color: #000;
-}
-.scost{
+.scost, .stitle{
   color:#000;
   text-align: center;
 }
